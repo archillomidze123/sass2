@@ -1,0 +1,22 @@
+@import'variable.scss';
+
+
+@mixin flex ($property, $vertical,$horizontal){
+    display: $property;
+    align-items: $vertical;
+    justify-content: $horizontal;
+}
+@mixin transition($property,$duration) {
+    transition-property: $property;
+    transition-duration: $duration
+}
+
+@mixin size-color($size) {
+    @if $size == $size-200 {
+        background: $red;
+    }@else if $size == $size-100{
+        background: $blue;
+    }@else {
+        background: $black;
+    }
+}
